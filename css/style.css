@@ -1,0 +1,126 @@
+*{
+  font-family: 'Fira Sans', sans-serif;
+}
+
+body{
+  padding:0;
+  margin:0 auto;
+  background-image: url('../img/bulldog.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100%;
+  background-color: #F0ECEE
+}
+
+/* GLOBAL - applies to all. may have to review later */
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul li{
+  margin: 0px;
+}
+
+
+/* Header */
+header{
+  background: ;
+  padding-top: 30px;
+  min-height: 70px;
+}
+
+/* Look at this later! You may need to adjust text color for all links except Contact Us */
+header a{
+  color: #88898B;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+header ul{
+  margin:0;
+  padding:0;
+}
+
+header li{
+  float: left;
+  display: inline;
+  padding: 15px 50px 30px 20px;
+}
+
+header #logo{
+  float: left;
+  position: relative;
+  top: 15px;
+  left: 5px;
+  font-size: 15px;
+}
+
+header #logo h1{
+  margin: 0;
+  font-weight: 900;
+  padding:
+}
+
+header nav{
+  float:right;
+  margin-top: 7px;
+}
+
+/* Adopt Me */
+header .highlight{
+  color: #FF4850;
+  font-weight:
+  background-color: #F0ECEE;
+}
+
+li a:hover{
+  color: #FF4850;
+}
+
+.current a{
+  background-color: #FF4850;
+  color: #F0ECEE;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+h1 span{
+  color: #FF4850;
+  background:
+}
+
+ul{
+  padding: 0;
+}
+
+.findout a{
+  text-decoration: none;
+  background-color: #FF4850;
+  color: #F0ECEE;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+/* Media Queries */
+
+@media all and (max-width: 768px) {
+  header #logo, header nav, header nav li{
+    float:none;
+    text-align:center;
+    width: 100%;
+  }
+
+  header{
+    padding-bottom: 20px;
+  }
+
+  body{
+
+    background: #F0ECEE
+  }
+}

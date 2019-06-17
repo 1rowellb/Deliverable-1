@@ -1,126 +1,217 @@
-*{
-  font-family: 'Fira Sans', sans-serif;
-}
+body, html {
+    font-family: 'Fira Sans', sans-serif;
+  }
+  body, html{
+    margin: 0;
+    padding: 0;
+    background: #F0ECEE;
+  }
+  
+  nav ul{
+    list-style: none;
+    padding: 10px 10px 30px 0px;
+    background: #F0ECEE;
+  }
+   
+  ul li .navlink{
+    display: block;
+    text-decoration: none;
+    color: #88898B;
+    padding: 10px 0px 2px 10px;
+    border-radius: 15px;
+    font-weight: 300;
+  }
+  
 
-body{
-  padding:0;
-  margin:0 auto;
-  background-image: url('../img/bulldog.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  min-height: 100%;
-  background-color: #F0ECEE
-}
-
-/* GLOBAL - applies to all. may have to review later */
-.container{
-  width: 80%;
-  margin: auto;
-  overflow: hidden;
-}
-
-ul li{
-  margin: 0px;
-}
-
-
-/* Header */
-header{
-  background: ;
-  padding-top: 30px;
-  min-height: 70px;
-}
-
-/* Look at this later! You may need to adjust text color for all links except Contact Us */
-header a{
-  color: #88898B;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 300;
-}
-
-header ul{
-  margin:0;
-  padding:0;
-}
-
-header li{
-  float: left;
-  display: inline;
-  padding: 15px 50px 30px 20px;
-}
-
-header #logo{
-  float: left;
-  position: relative;
-  top: 15px;
-  left: 5px;
-  font-size: 15px;
-}
-
-header #logo h1{
-  margin: 0;
-  font-weight: 900;
-  padding:
-}
-
-header nav{
-  float:right;
-  margin-top: 7px;
-}
-
-/* Adopt Me */
-header .highlight{
-  color: #FF4850;
-  font-weight:
-  background-color: #F0ECEE;
-}
-
-li a:hover{
-  color: #FF4850;
-}
-
-.current a{
-  background-color: #FF4850;
-  color: #F0ECEE;
-  padding: 10px;
-  border-radius: 15px;
-}
-
-h1 span{
-  color: #FF4850;
-  background:
-}
-
-ul{
-  padding: 0;
-}
-
-.findout a{
-  text-decoration: none;
-  background-color: #FF4850;
-  color: #F0ECEE;
-  padding: 10px;
-  border-radius: 15px;
-}
-
-/* Media Queries */
-
-@media all and (max-width: 768px) {
-  header #logo, header nav, header nav li{
-    float:none;
-    text-align:center;
-    width: 100%;
+  ul li .contact{
+    display: block;
+    position: relative;
+    bottom: -15px;
+    text-decoration: none;
+    text-align: center;
+    color: #F0ECEE;
+    background-color: #FF4850;
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px;
+    margin-right: 10px;
+    margin-left: 20px;
+    font-weight: 300;
+    font-size: 20px;
   }
 
-  header{
-    padding-bottom: 20px;
+  /* logo */
+  
+  nav div:first-child{
+    padding: 0px 10px 0px 10px;
+  }
+  
+  nav div:first-child h1{
+    padding: 15px 0px 10px 0px;
+  }
+ 
+  h1 span{
+    color: #FF4850;
   }
 
-  body{
-
-    background: #F0ECEE
+  nav div:first-child h1, nav ul{
+    margin: 0;
   }
-}
+
+  
+  /* box article */
+  
+  .box{
+    display: block;
+    text-align: left;
+    padding: 10px;
+  }
+
+  .adopting2{
+    color: #FF4850;
+  }
+  
+  p.adopting{
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 1.6;
+  }
+
+  p.adopting3{
+    color: #88898B;
+    font-weight: 300;
+  }
+  
+
+  ul li .button{
+    display: block;
+    position: relative;
+    bottom: -15px;
+    right: 30px;
+    margin-right: -21px;
+    align-content: center;
+    text-decoration: none;
+    color: #F0ECEE;
+    background-color: #FF4850;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px;
+    font-weight: 300;
+    font-size: 20px;
+  }
+
+  div ul li{
+    list-style: none;
+  }
+  
+  
+
+ 
+
+
+  /* ***Style for larger screen devices*** */
+  
+  @media only screen and (min-width: 768px){
+    body{
+      padding: 0px;
+    }
+    
+    nav{
+      display: flex;
+      background: #F0ECEE;
+    }
+    
+    nav ul{
+      display: flex;
+      width: 80%;
+      justify-content: flex-end;
+    }
+    
+    nav ul li{
+      padding: 0px 15px 0px 0px;
+    }
+    
+    nav div:first-child{
+      display: flex;
+      width: 20%;
+      padding: 0px 0px 0px 10px;
+    }
+    
+    ul li .contact{
+      padding: 10px 10px 10px 10px;
+      position: relative;
+      bottom: 0px;
+      margin: 0px;
+      font-size: 16px;
+      color: white;
+    }
+
+    ul li .contact:hover{
+      color: #FF4850;
+      background: #CCC;
+    }
+    
+    ul li .navlink{
+      padding: 10px 10px 10px 10px;
+      font-size: 16px;
+    }
+
+    ul li .navlink:hover{
+      color: #FF4850;
+      background: #CCC;
+    }
+
+    /* box article */
+    .box{
+      display: block;
+      background: #F0ECEE url(../img/bulldog.jpg) top center;
+      background-size: cover;
+     
+    }
+
+    /* Find out how button */
+
+    ul li .button{
+      display: flex;
+      position: relative;
+      bottom: 0px;
+      right: 0px;
+      margin-right: 25px;
+      align-content: center;
+      text-decoration: none;
+      color: #F0ECEE;
+      background-color: #FF4850;
+      text-align: center;
+      padding: 10px 50px 10px 50px;
+      border-radius: 15px;
+      font-size: 16px;
+      color: white;
+    }
+
+    ul li .button:hover{
+      color: #FF4850;
+      background: #CCC;
+    }
+
+    div ul li{
+      display: flex;
+      width: 100%;
+      position: relative;
+      right: 40px;
+      margin-bottom: 40%;
+    }
+
+    /* Below is the box around the adoption header */
+
+    .box .adopting{
+      margin-top: 10%;
+      margin-right: -80%;
+      width: 40%;
+      height: auto;
+    }
+
+    .box .adopting3{
+      width: 28%;
+      height: auto;
+
+
+    }
